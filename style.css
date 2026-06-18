@@ -1,0 +1,195 @@
+/*
+Clay Dust (#EFEFE9) – Ultra-light warm gray. Best used for the page background to avoid a sterile pure white. Sage Leaf (#A1B29F) – Light,
+muted green. Perfect for secondary blocks,
+cards,
+or borders. Fern Moss (#60775B) – Medium earthy green. Ideal for primary elements,
+active links,
+and buttons. Deep Forest (#3C4B39) – Dark,
+high-contrast green. Best for body text and main headers to ensure accessibility. Rich Soil (#2E231C) – Deep,
+warm brown accent. Excellent for footers,
+text details,
+or dark mode alternatives.
+
+#1A1A1A (a soft charcoal) or #212529 (a clean off-black).
+
+
+
+body,html {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: #EFEFE9;
+  font-family: 'Inter', sans-serif;
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+
+
+#details {
+ padding: 3px;
+ width: 100%;
+ height: auto;
+ border: 2px solid darkgray;
+
+ font-size: 1rem;
+ line-height: 1.6;
+ color: #1A1A1A;
+}
+
+.details-1, .details-2 {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 4px;
+ margin: 2px;
+}
+
+.single-detail {
+ border: 2px solid darkgray;
+ margin: 2px;
+ padding: 20px;
+}
+
+#title {
+ width: 100%;
+ height: auto;
+ background-color: #ddf7d8;
+ display: flex;
+ flex-direction: column;
+ border: 2px solid darkgray;
+ margin-top: 10px;
+ justify-content: center;
+ align-items: center;
+ padding: 3px;
+}
+
+img {
+   padding: 10px;
+   max-width: 60px;
+  
+}
+
+.top, .bottom {
+ display:flex
+}
+
+.top div, .bottom div {
+ width: 50%;
+ background: #3C4B39;
+ padding: 15px;
+ margin: 2px;
+}
+
+.references {
+ background: #2E231C
+}
+  */
+
+      /* General */
+   
+      body {
+       margin: 20px;
+       background: #F4F7F2;
+       font-family: Arial, Helvetica, sans-serif;
+       color: #2F3A2F;
+      }
+   
+      /* Student Details */
+   
+      #details {
+       background: white;
+       border-radius: 12px;
+       padding: 10px;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+      }
+   
+      .details-1,
+      .details-2 {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 10px;
+       margin: 8px 0;
+      }
+   
+      .single-detail {
+       background: #EEF6EB;
+       padding: 12px;
+       border-radius: 8px;
+       text-align: center;
+      }
+   
+      /* Title */
+   
+      #title {
+       margin-top: 20px;
+       background: #D9EFCF;
+       border-radius: 12px;
+       padding: 20px;
+       display: flex;
+       justify-content: center;
+      }
+   
+      .title-container {
+       width: 100%;
+       text-align: center;
+      }
+   
+      #logo img {
+       width: 70px;
+       margin-bottom: 10px;
+      }
+   
+      .title h2 {
+       font-size: 2.2rem;
+       color: #355233;
+       margin-bottom: 5px;
+      }
+   
+      /* Main Sections */
+   
+      .top,
+      .bottom {
+       display: flex;
+       gap: 15px;
+       margin-top: 15px;
+      }
+   
+      .top div,
+      .bottom div {
+       flex: 1;
+       background: white;
+       border-radius: 12px;
+       padding: 20px;
+       box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+      }
+   
+      .top b,
+      .bottom b {
+       font-size: 1.2rem;
+       color: #496647;
+      }
+   
+      /* References */
+   
+      .references {
+       margin-top: 15px;
+       background: #355233;
+       color: white;
+       border-radius: 12px;
+       padding: 20px;
+      }
+   
+      /* Hover effect */
+   
+      .top div:hover,
+      .bottom div:hover {
+       transform: translateY(-3px);
+       transition: .3s;
+      }
